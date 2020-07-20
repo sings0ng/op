@@ -95,8 +95,8 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
 RUN dpkg -i google-chrome-stable_current_amd64.deb
 ######################################
 ######################################
-RUN echo "nameserver 8.8.8.8" >> /etc/resolv.conf
-RUN echo "nameserver 8.8.4.4" >> /etc/resolv.conf
+#RUN echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+#RUN echo "nameserver 8.8.4.4" >> /etc/resolv.conf
 ######################################
 
 
