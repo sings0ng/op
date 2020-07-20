@@ -91,8 +91,8 @@ Run git clone https://github.com/kanaka/websockify $HOME/noVNC/utils/websockify
 
 RUN wget https://ftp.mozilla.org/pub/firefox/releases/52.0.1esr/firefox-52.0.1esr.linux-x86_64.sdk.tar.bz2 
 RUN tar xvf firefox-52.0.1esr.linux-x86_64.sdk.tar.bz2 -C /root/
-RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
-RUN dpkg -i google-chrome-stable_current_amd64.deb
+#RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+#RUN dpkg -i google-chrome-stable_current_amd64.deb
 ######################################
 ######################################
 #RUN echo "nameserver 8.8.8.8" >> /etc/resolv.conf
@@ -124,7 +124,7 @@ RUN printf "123123123\n123123123\n\n" | vncpasswd
 RUN sed -i 's/@"/@" --no-sandbox/' /opt/google/chrome/google-chrome
 
 RUN  rm firefox-52.0.1esr.linux-x86_64.sdk.tar.bz2
-RUN  rm google-chrome-stable_current_amd64.deb
+#RUN  rm google-chrome-stable_current_amd64.deb
 
 
 VOLUME ["/etc/ssh"]
